@@ -1,0 +1,110 @@
+.pricing {
+    margin-bottom: 12.5em;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.8em;
+        @include tablet{
+            font-size: 36px;
+        }
+    }
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        @include mini-tablet{
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-light);
+        justify-content: space-between;
+        align-items: stretch;
+        &__self-study{
+            padding: 20px 10px 25px 15px; 
+        }
+
+            &__img {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 20em;
+                margin-bottom: 2em;
+                @include mini-tablet{
+                    flex-direction: column;
+                }
+            }
+            &__title{
+                font-size: 30px;
+                font-weight: 600;
+                color: var(--color-dark);
+                margin-bottom: 1em;
+                display: flex;
+          
+                @include tablet{
+                    font-size: 22px;
+                }
+            }
+            &__subtitle{
+                font-size: 20px;
+                font-weight: 400;
+                color: var(--color-gray-alt);
+                margin-bottom: 3em;
+                @include tablet{
+                    font-size: 16px;
+                }
+                
+            }
+            &__button{
+                width: 70%;
+                display: flex;
+                align-items: center;
+                border-radius: var(--border-radius-small);
+                background-color: var(--color-gray);
+                border: 2px solid white;
+                color: var(--color-gray-alt);
+                font-size: 18px;
+                padding: 0.1em 0.1em;
+                gap: 5%;
+                text-wrap: nowrap;
+                @include tablet{
+                    font-size: 16px;
+                }
+                .price{
+                    color: var(--color-dark);
+                    font-size: 30px;
+                    @include tablet{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    @include mini-tablet{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
